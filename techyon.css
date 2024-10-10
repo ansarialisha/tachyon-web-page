@@ -1,0 +1,113 @@
+@keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-15px)
+                rotate(0deg);
+
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-15px)
+                rotate(-360deg);
+    }
+  }
+  .float-animation {
+    animation: circle 10s linear infinite;
+  }
+    /* Hover effect for the entire paragraph box */
+    .hover-effect {
+      position: relative;
+      border: 2px solid transparent; /* Start with a transparent border */
+      transition: border-color 0.3s, transform 0.3s, background-color 0.3s; /* Smooth transition */
+      padding: 16px; /* Padding for the paragraph */
+      border-radius: 8px; /* Rounded corners */
+    }
+
+    .hover-effect:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+      color: white; /* Change text color to white on hover */
+      border-color: white; /* Change border color to white on hover */
+      text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00; /* Add a glowing effect */
+      transform: scale(1.05); /* Slightly scale up on hover */
+    }
+
+    /* Styling for the boxes */
+    .box {
+      height:100vh; /* Height of each box */
+      display: flex; /* Enable flexbox for content alignment */
+      align-items: center; /* Center content vertically */
+      justify-content: center; /* Center content horizontally */
+      color: white; /* Text color */
+      font-size: 24px; /* Text size */
+      font-weight: bold; /* Text weight */
+    }
+.main-wrapper{ 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+body {
+    background-color: black;
+}
+.container-1{
+    height: 600px;width: 35%;
+    background-color: #33230F;
+}
+#box-shadow{
+    box-shadow: #F6EFE5 0px 2px 8px inset;
+    border-radius: 40px;
+    border: solid white 2px;
+   
+}
+.border-radius{
+    border-radius: 60px;
+}
+#border{
+    padding-left: 100px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: #F6EFE5 0px 2px 8px inset;
+    background: linear-gradient(to left bottom, #303030,#050505,#39688E);
+}
+.height-width{
+    height: 360px;
+    width: 360px;
+    background: linear-gradient(130deg,#000000,#232323,#6C6C6C);
+}
+.gradient{
+    background-color: black;
+    background: radial-gradient(at left bottom, rgba(204,130,20,1), rgba(0,0,0,0) 50%),
+                radial-gradient(at right top, rgba(91,162,221,1), rgba(0,0,0,0) 50%);
+                 
+}
+.gradient-1{
+    background-color: black;
+    background: radial-gradient(at left top, rgb(222,148,40) 20%, rgba(0,0,0,0) 55%),
+                radial-gradient(at right bottom, rgba(91,162,221,1) 20%, rgba(0,0,0,0) 55%);
+}
+@media (min-width:200px) and (max-width: 768px) {
+    .media{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .height{
+        min-height: fit-content;
+    }
+    .min-height{
+        min-height: fit-content;
+    }
+    .fixed-h{
+        height: 1000px;
+        width: 100%;
+    }
+    /* .fix-height{
+        height: 1500px;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+    } */
+    
+}
