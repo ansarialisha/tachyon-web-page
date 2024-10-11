@@ -28,7 +28,8 @@ body {
     background-color: black;
 }
 .container-1{
-    height: 600px;width: 35%;
+    height: 600px;
+    width: 35%;
     background-color: #33230F;
 }
 #box-shadow{
@@ -76,7 +77,45 @@ body {
 .height{
     height: 900px;
 }
-
+.color{
+    color: #EAB04E;
+}
+.width{
+    width: 25rem;
+}
+.section1-gradient{
+    background: rgb(249,160,28);
+    background: radial-gradient(circle, rgba(249,160,28,1) 0%, rgba(0,0,0,1) 95%);
+}
+.section2-gradient{
+    background: rgb(236,24,101);
+    background: radial-gradient(circle, rgba(236,24,101,1) 0%, rgba(0,0,0,1) 95%);
+}
+.section3-gradient{
+    background: rgb(0,74,174); 
+    background: radial-gradient(circle, rgba(0,74,174,1) 0%, rgba(0,0,0,1) 95%);
+}
+.section4-gradient{
+    background: rgb(193,255,114); 
+    background: radial-gradient(circle, rgba(193,255,114,1) 0%, rgba(0,0,0,1) 95%);
+}
+.section5-gradient{
+    background: linear-gradient(to left bottom, #000000, #000000, #163044, #38678D, #5CA4E0);
+}
+.img{
+    height: 100px;
+    width: 100px; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+.curve{
+    border-right: solid white 5px;
+    border-radius: 50%;
+}
+.background{
+    border-radius: 25px; 
+    background-color: #E4E0D7;height: 50px;
+}
 @media (min-width:300px) and (max-width: 768px) {
     .media{
         width: 100%;
@@ -111,9 +150,23 @@ body {
         font-size: 14px;
     }
     .height-width{
-        height: 300px;
-        width: 300px;
+        height: 360px;
+        width: 320px;
+        padding: 45px;
 
     }
-    
+    .display-none{
+        display: none;
+    }
+    .gradient-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .display-none{
+        display: none;
+    }
+    .width{
+        width: 15rem;
+        margin-bottom: 20px;
+    }
 }
