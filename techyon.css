@@ -67,9 +67,6 @@ body {
     background: radial-gradient(at left top, rgb(222,148,40) 20%, rgba(0,0,0,0) 55%),
                 radial-gradient(at right bottom, rgba(91,162,221,1) 20%, rgba(0,0,0,0) 55%);
 }
-.min-height{
-    min-height: fit-content;
-}
 .h-w-img{
     height: 45px;
     width: 45px;
@@ -110,7 +107,8 @@ body {
 }
 .curve{
     border-right: solid white 5px;
-    border-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 .background{
     border-radius: 25px; 
@@ -126,9 +124,7 @@ body {
     .height{
         min-height: fit-content;
     }
-    .min-height{
-        min-height: fit-content;
-    }
+
     .fixed-h{
         height: 1000px;
         width: 100%;
@@ -152,7 +148,7 @@ body {
     .height-width{
         height: 360px;
         width: 320px;
-        padding: 45px;
+        padding: 25px;
 
     }
     .display-none{
